@@ -1,0 +1,18 @@
+body {
+    background-color: $color-background;
+    font-family: $font-primary;
+  }
+  
+  .txtverdeprimero {
+    color: $color-secondary;
+  }
+  
+  .txtverde {
+    color: $color-primary;
+  }
+  
+  .txtverdesegundo {
+    color: $color-secondary;
+    text-decoration: underline $color-primary;
+  }
+  

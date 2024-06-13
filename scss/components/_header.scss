@@ -1,0 +1,87 @@
+.contenedor-header {
+  width: 100%;
+  position: fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.5)), linear-gradient(-45deg, #000000, $color-primary, #000000, #02fe0a, #59ff00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  z-index: 99;
+  padding: 0 20px;
+}
+.contenedor-header header {
+  max-width: 1100px;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  color: #fff;
+}
+.contenedor-header header nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  padding: 5px;
+  text-transform: uppercase;
+}
+.contenedor-header header nav a:hover {
+  color: $color-primary;
+}
+.contenedor-header header .redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  padding: 5px 8px;
+}
+.contenedor-header header .redes a:hover {
+  color: $color-primary;
+}
+
+.nav-responsive {
+  display: none;
+  font-size: 25px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  color: $color-primary;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.5)), linear-gradient(-45deg, #000000, $color-primary, #000000, #02fe0a, #59ff00);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  z-index: 1;
+  width: max-content;
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 12px;
+  white-space: nowrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+.dropdown-content a:hover {
+  background-color: rgba(0, 255, 0, 0.3);
+}

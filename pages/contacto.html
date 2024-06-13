@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TEAM ARMANI: Kickboxing - K1 - Boxeo | Donde la excelencia en moda y estilo se fusionan con el arte del deporte. Únete a nosotros para una experiencia única de entrenamiento y moda.">
+    <meta name="keywords" content="TEAM ARMANI, entrenamiento, moda, deporte, kickboxing, boxeo, K1, tienda deportiva">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+    <link rel="icon" href="../img/logo.png">
+    <title>TEAM ARMANI</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            
+            <h1><a href="../index.html#inicio-equipamiento" onclick="seleccionar()">TEAM<span class="txtverde">ARMANI</a></span></h1>
+            <nav id="nav">
+                <a href="../index.html#inicio" onclick="seleccionar()">inicio</a>
+                <a href="../index.html#nosotros" onclick="seleccionar()">Entrena</a>
+
+                <div class="dropdown">
+                    <button class="dropbtn">TIENDA <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content">
+                        <a href="./tienda-trending.html">Trending</a>
+                        <a href="./tienda-entrenamiento.html">Entrenamiento</a>
+                    </div>
+                </div>
+
+                <a href="../index.html#modalidades" onclick="seleccionar()">Modalidades</a>
+                <a href="./galeria.html" onclick="seleccionar()">Galería</a>
+                <a href="./equipamiento.html" onclick="seleccionar()">Equipamiento</a>
+                <a href="./contacto.html" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://web.facebook.com/KyudoMugen.TeamArmani/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@teamarmani-kickboxing-boxe8255"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/teamarmani_kyudomugen/?hl=es"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+
+<!-- SECCION CONTACTO --->
+<section class="contacto" id="contacto">
+    <div class="contenido-seccion">
+        <div class="contenedor-titulo">
+            <div class="numero">
+                06
+            </div>
+            <div class="info">
+                <span class="frase">LA MEJOR EXPERIENCIA</span>
+                <h2>CONTACTO</h2>
+            </div>
+        </div>
+        <div class="sub">Envianos un mensaje por WhatsApp!</div>
+    
+        <div class='waform-comp' id='waform'>
+            <div class='form-container'>
+            <div class='formC'>
+                <div class='Fcontrol'>
+                <input class='cName' id='cName' name='name' type='text' required='required'/>
+                <span class='nameC'>Nombre</span>
+                <span class='valid' id='error_name'></span>
+                </div>
+                <div class='Fcontrol'>
+                <input class='cEmail' id='cEmail' name='email' type='email' required='required'/>
+                <span class='emailC'>Correo electronico</span>
+                <span class='valid' id='error_email'></span>
+                </div>
+            </div>
+            <div class='formC'>
+                <div class='Fcontrol'>
+                <select class='cSubject' id='cSubject'>
+                    <option value='Hombre'>Hombre</option>
+                    <option value='Mujer'>Mujer</option>
+                </select>
+                <span class='subjectC'>Selecciona tu género</span>
+                </div>
+                <div class='Fcontrol'>
+                <textarea class='cMessage' id='cMessage' name='message' required='required'></textarea>
+                <span class='messageC'>Mensaje</span>
+                <span class='valid' id='error_message'></span>
+                </div>
+            </div>
+            <div class='formB'>
+                <a class='whatsapp-link' onclick='redirectToWhatsApp()'>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M16 2a13 13 0 0 0-8 23.23V29a1 1 0 0 0 .51.87A1 1 0 0 0 9 30a1 1 0 0 0 .51-.14l3.65-2.19A12.64 12.64 0 0 0 16 28a13 13 0 0 0 0-26Zm0 24a11.13 11.13 0 0 1-2.76-.36 1 1 0 0 0-.76.11L10 27.23v-2.5a1 1 0 0 0-.42-.81A11 11 0 1 1 16 26Z"/><path d="M19.86 15.18a1.9 1.9 0 0 0-2.64 0l-.09.09-1.4-1.4.09-.09a1.86 1.86 0 0 0 0-2.64l-1.59-1.59a1.9 1.9 0 0 0-2.64 0l-.8.79a3.56 3.56 0 0 0-.5 3.76 10.64 10.64 0 0 0 2.62 4 8.7 8.7 0 0 0 5.65 2.9 2.92 2.92 0 0 0 2.1-.79l.79-.8a1.86 1.86 0 0 0 0-2.64Zm-.62 3.61c-.57.58-2.78 0-4.92-2.11a8.88 8.88 0 0 1-2.13-3.21c-.26-.79-.25-1.44 0-1.71l.7-.7 1.4 1.4-.7.7a1 1 0 0 0 0 1.41l2.82 2.82a1 1 0 0 0 1.41 0l.7-.7 1.4 1.4Z"/></svg>
+                Enviar WhatsApp</a>
+            </div>
+            </div>
+        </div>
+    
+        
+        <div class="fila-datos">
+            <div class="col">
+                <i class="fa-solid fa-location-dot"></i>
+                Colombia 255, Bahia blanca
+            </div>
+            <div class="col">
+                <i class="fa-regular fa-clock"></i>
+                Lunes a Viernes, 19 a 20hs
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+  
+
+<footer>
+    <div class="info">
+        <p>2024 - <span class=" txtverde">TEAM ARMANI</span> Todos los derechos reservados</p>
+        <div class="redes">
+            <a href="https://web.facebook.com/KyudoMugen.TeamArmani/?_rdc=1&_rdr">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/teamarmani_kyudomugen/?hl=es">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@teamarmani-kickboxing-boxe8255">
+                <i class="fa-brands fa-youtube"></i>
+            </a>
+        </div>
+    </div>
+</footer>
+
+<script src="../js/app.js"></script>
+<script src="../js/wp.js"></script>
+</body>
+</html>

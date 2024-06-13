@@ -1,0 +1,37 @@
+# Dependencias de Node.js
+node_modules/
+
+# Directorios de logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Directorios de build
+build/
+dist/
+
+# Directorios de despliegue
+.deploy/
+
+# Directorios de pruebas
+coverage/
+
+# Archivos de entorno
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Archivos temporales del sistema
+.DS_Store
+Thumbs.db
+
+# Configuraciones del editor
+.vscode/
+.idea/
+
+# Archivo de salida de SCSS
+public/css/styles.css

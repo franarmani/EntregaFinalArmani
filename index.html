@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TEAM ARMANI: Kickboxing - K1 - Boxeo | Donde la excelencia en moda y estilo se fusionan con el arte del deporte. Únete a nosotros para una experiencia única de entrenamiento y moda.">
+    <meta name="keywords" content="TEAM ARMANI, entrenamiento, moda, deporte, kickboxing, boxeo, K1, tienda deportiva">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" href="./img/logo.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <title>TEAM ARMANI</title>
+</head>
+<body>
+    <!-- MENU -->
+    <div class="contenedor-header">
+        <header>
+            <h1><a href="index.html" onclick="seleccionar()">TEAM<span class="txtverde"> ARMANI</span></a></h1>
+            <nav id="nav">
+                <a href="./index.html#inicio" onclick="seleccionar()">Inicio</a>
+                <a href="./index.html#nosotros" onclick="seleccionar()">Entrena</a>
+                <div class="dropdown">
+                    <button class="dropbtn">TIENDA <i class="fa fa-caret-down"></i> </button>
+                    <div class="dropdown-content">
+                        <a href="./pages/tienda-trending.html">Trending</a>
+                        <a href="./pages/tienda-entrenamiento.html">Entrenamiento</a>
+                    </div>
+                </div>
+                <a href="./index.html#modalidades" onclick="seleccionar()">Modalidades</a>
+                <a href="./pages/galeria.html" onclick="seleccionar()">Galería</a>
+                <a href="./pages/equipamiento.html" onclick="seleccionar()">Equipamiento</a>
+                <a href="./pages/contacto.html" onclick="seleccionar()">Contacto</a>
+            </nav>
+            <div class="redes">
+                <a href="https://web.facebook.com/KyudoMugen.TeamArmani/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.youtube.com/@teamarmani-kickboxing-boxe8255"><i class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.instagram.com/teamarmani_kyudomugen/?hl=es"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>                
+        </header>
+    </div>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <!-- SECCION INICIO -->
+        <section id="inicio" class="inicio">
+            <div class="contenido-seccion">
+                <div class="info">
+                    <h2>TEAM <span class="txtverde">ARMANI</span></h2>
+                    <p>Siempre on trending</p>
+                    <a href="#nosotros" class="btn-mas">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </a>
+                </div>
+                <div class="opciones">
+                    <div class="opcion">01. Dedicados</div>
+                    <div class="opcion">02. Dinámicos</div>
+                    <div class="opcion">03. Resilientes</div>
+                    <div class="opcion">04. Unidos</div>
+                    <div class="opcion">05. Inspiradores</div>
+                    <div class="opcion">06. Conectados</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION NOSOTROS -->
+        <section id="nosotros" class="nosotros">
+            <div class="fila">
+                <div class="col">
+                    <img src="./img/index/nosotros.png" alt="Foto del equipo">
+                </div>
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">01</div>
+                        <div class="info">
+                            <span class="frase">LA MEJOR EXPERIENCIA</span>
+                            <h2>NOSOTROS</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">Entrena con nosotros!</p>
+                    <p>Donde la excelencia en moda y estilo se fusionan con el arte del deporte.</p>
+                </div>
+            </div>
+            <hr>
+            <div class="fila-nosotros">
+                <div class="col1">
+                    <span class="frase"><span class="txtverdeprimero">ENTRENA</span> DIFERENTE</span>
+                    <h2>ENTRENA <span class="txtverdesegundo">GRATIS</span> HOY!</h2>
+                    <p>(clase de prueba)</p>
+                </div>
+                <div class="col2">
+                    <a href="https://api.whatsapp.com/send?phone=+5492915716099&text=Hola!%20Mi%20nombre%20es%20---%20y%20quisiera%20probar%20una%20clase!%20" target="_blank"><button>CLASE DE PRUEBA</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION SERVICIOS -->
+        <section class="servicios" id="servicios">
+            <div class="contenido-seccion">
+                <div class="contenedor-titulo">
+                    <div class="numero">02</div>
+                    <div class="info">
+                        <span class="frase">Nuestra tienda</span>
+                        <h2>ARMANI'S DROP</h2>
+                        <p>Enfrenta el ring con estilo y determinación.</p>
+                    </div>
+                </div>
+                <div class="botones-container">
+                    <a href="./pages/tienda-trending.html"><button>Drops Over</button></a>
+                    <a href="./pages/tienda-entrenamiento.html"><button>Entrenamiento</button></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION MODALIDADES -->
+        <section id="modalidades" class="modalidades">
+            <div class="fila">
+                <div class="col">
+                    <img src="./img/index/wallpaperlogo.jpg" alt="Foto del logo">
+                </div>
+                <div class="col">
+                    <div class="contenedor-titulo">
+                        <div class="numero">03</div>
+                        <div class="info">
+                            <span class="frase">Entrenamos todos los días!</span>
+                            <h2>VENI A ENTRENAR!</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial">Te esperamos todos los días de 19 a 20hs!</p>
+                    <ul>
+                        <li><span>K1</span> - Este arte marcial es la combinación de varias artes marciales utilizando el estilo full-contact, principalmente Karate Kyokushin, Kick Boxing, Muay Thai y Boxeo, teniendo como artes marciales secundarias o menos influyentes por la falta de uso de sus técnicas en el K-1: Taekwondo, Kung-Fu, Capoeira, Savate, etc.</li>
+                        <li><span>KickBoxing</span> - El kick boxing se considera un deporte que mezcla técnicas de diferentes disciplinas, entre ellas el karate japonés, taekwondo, boxeo occidental y muay thai tailandés.</li>
+                        <li><span>Boxeo</span> - El boxeo es un deporte olímpico de contacto en el que dos atletas se enfrentan dentro de un cuadrilátero, utilizando solo sus puños para golpear al oponente en la cabeza o el cuerpo, siempre por encima de la cintura.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION GALERIA -->
+        <section class="galeria" id="galeria">
+            <div class="contenido-seccion">
+                <div class="contenedor-titulo">
+                    <div class="numero">04</div>
+                    <div class="info">
+                        <span class="frase">CONOCENOS EN REDES!</span>
+                        <h2>NUESTRO INSTAGRAM</h2>
+                        <p>Toca en la foto para conocer nuestro Instagram</p>
+                    </div>
+                </div>
+                <a href="https://www.instagram.com/teamarmani_kyudomugen/?hl=es" target="_blank">
+                    <img src="./img/index/inicio-nuestroInstagram/inicionuestroinstagram.jpg" alt="Foto de nuestro Instagram">
+                </a>
+            </div>
+        </section>
+
+        <!-- SECCION MAPA -->
+        <section id="mapa" class="mapa">
+            <div class="fila-mapa">
+                <div class="col-mapa">
+                    <div class="contenedor-titulo-mapa">
+                        <div class="numero-mapa">05</div>
+                        <div class="info-mapa">
+                            <h2>¿EN DONDE ESTAMOS?</h2>
+                        </div>
+                    </div>
+                    <p class="p-especial-mapa">Colombia 255, B8000 Bahía Blanca, Provincia de Buenos Aires</p>
+                </div>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.723803807177!2d-62.28404562430289!3d-38.7011881852753!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95edbb4346c11259%3A0x4e8ec13c39169383!2sColombia%20255%2C%20B8000%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1717101793039!5m2!1ses-419!2sar" height="590" style="border:0;" allowfullscreen=""></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="info">
+            <p>2024 - <span class="txtverde">TEAM ARMANI</span> Todos los derechos reservados</p>
+            <div class="redes">
+                <a href="https://web.facebook.com/KyudoMugen.TeamArmani/?_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/teamarmani_kyudomugen/?hl=es"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@teamarmani-kickboxing-boxe8255"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/app.js"></script>
+</body>
+</html>

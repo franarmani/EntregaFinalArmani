@@ -1,0 +1,17 @@
+$font-primary: "Barlow";
+$font-secondary: "Titillium Web";
+$color-primary: #09ff00;
+$color-secondary: #000000;
+$color-background: #dde1e9;
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

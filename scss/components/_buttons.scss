@@ -1,0 +1,22 @@
+.inicio .info .btn-mas,
+.nosotros .fila-nosotros button,
+.contacto button {
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  border: 2px solid $color-primary;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $color-primary;
+  margin-top: 50px;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.inicio .info .btn-mas:hover,
+.nosotros .fila-nosotros button:hover,
+.contacto button:hover {
+  background-color: rgba(9, 255, 0, 0.3);
+}

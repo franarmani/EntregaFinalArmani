@@ -1,0 +1,282 @@
+@charset "UTF-8";
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+  margin: 2% auto;
+}
+
+.product-area {
+  flex: 1 1 calc(30% - 30px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  border-radius: 25px;
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+.product-area:hover {
+  transform: scale(1.05);
+}
+
+.img-area {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.img-area img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: opacity 0.5s ease;
+}
+
+.product-area:hover .product-overlay {
+  opacity: 0.9;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.btn-1 {
+  display: inline-block;
+  padding: 10px 10px;
+  background-color: #09ff00;
+  color: #000000;
+  font-size: 10px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.btn-1:hover {
+  background-color: rgba(0, 255, 0, 0.3);; 
+  color: #ffffff;
+}
+
+.info-area {
+  padding: 10px 20px;
+  text-align: center;
+  background: #000;
+  flex-grow: 1;
+}
+.info-area h3 {
+  font-size: 30px;
+  margin: 0;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+.rating span {
+  color: #fff;
+}
+
+.checked {
+  color: orange !important;
+}
+
+.product-price {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.tienda {
+  color: #000000;
+  padding-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.tienda a {
+  text-decoration: none;
+}
+.tienda .contenido-seccion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tienda .contenedor-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tienda .contenedor-titulo .info {
+  margin-left: 15px;
+}
+.tienda .contenedor-titulo .info .frase {
+  color: #09ff00;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 600;
+}
+.tienda .contenedor-titulo .info h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  text-align: center;
+}
+
+.subtitulo {
+  font-size: 24px;
+}
+
+.tienda .contenedor-titulo .info p {
+  margin-bottom: 10px;
+  line-height: 28px;
+  font-size: 2rem;
+  color: #000000;
+  text-align: center;
+}
+.inicio-equipamiento {
+  height: 100vh;
+  width: 100%;
+  animation: gradient 15s ease infinite;
+  color: #fff;
+  position: relative;
+}
+
+.inicio-equipamiento .info h2 {
+  font-size: 50px;
+  letter-spacing: 3px;
+}
+
+.inicio-equipamiento .opciones {
+  display: none;
+}
+
+.inicio-equipamiento .contenido-seccion {
+  max-width: 1100px;
+  margin: auto;
+}
+
+.inicio-equipamiento .info {
+  width: fit-content;
+  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.inicio-equipamiento .info h2 {
+  font-size: 2rem;
+  letter-spacing: 3px;
+}
+
+.inicio-equipamiento .info p {
+  margin: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.inicio-equipamiento .info .btn-mas {
+  width: 50px;
+  margin: auto;
+  height: 50px;
+  border: 2px solid #09ff00;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: #09ff00;
+  margin-top: 50px;
+  text-decoration: none;
+}
+
+.inicio-equipamiento .opciones .opcion {
+  border-top: 2px solid #ffffff;
+  padding: 7px;
+  color: #ffffff;
+  margin: 0 20px;
+}
+
+.video-dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); 
+}
+.opciones {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/tienda/equipamiento/homero.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 0;
+}
+
+@media (max-width: 768px) {
+  .product-area {
+    flex: 1 1 calc(48% - 30px);
+  }
+  .tienda {
+    color: #000000;
+    padding-top: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .tienda .contenedor-titulo .info .frase {
+    font-size: 2.3rem;
+    font-weight: 600;
+  }
+  .tienda .contenedor-titulo .info h2 {
+    font-size: 2.3rem;
+  }
+  .tienda .contenedor-titulo .info p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 576px) {
+  .product-area {
+    flex: 1 1 100%;
+  }
+}
+
+
+
+
+/*# sourceMappingURL=tienda.css.map */
