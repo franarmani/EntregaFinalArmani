@@ -720,21 +720,20 @@ footer .info a {
   .nav-responsive {
     display: block;
   }
-
-  nav.responsive {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.5)), linear-gradient(-45deg, #000000, #00ff5e, #000000, #02fe0a, #59ff00);
-    background-size: 400% 400%;
-    animation: gradient 15s ease infinite;
-    z-index: 99;
-    justify-content: center;
-  }
+    nav.responsive {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        margin-top: 400px;
+        width: 50%;
+        height: 1000px;
+        background: linear-gradient(rgba(0, 0, 0, 0.66), rgba(0, 0, 0, 0.5)), linear-gradient(-45deg, #000000, #00ff5e, #000000, #02fe0a, #59ff00);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        z-index: 99;
+        justify-content: center;
+    }
 
   nav.responsive .dropdown {
     text-align: center;
